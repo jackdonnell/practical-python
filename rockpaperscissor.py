@@ -1,6 +1,8 @@
-computer_choice = 'scissors'
+import random
 
-user_choice = input('do you want - rosck, paper, or scissors?\n')
+computer_choice = random.choice(['rock', 'paper', 'scissors'])
+
+user_choice = input('do you want - rock, paper, or scissors?\n')
 
 if computer_choice == user_choice:
     print('You Tied')
